@@ -1,131 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- SEO BÁSICO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ganesh Coffee Chile ofrece café artesanal, cold brew y experiencias conscientes. Conecta. Vibra. Disfruta cada sorbo." />
-  <meta name="keywords" content="café, cold brew, ganesh coffee, café artesanal, chile, espiritualidad, coffee shop" />
+  <title>Ganesh Coffee Chile | Café Artesanal con Alma</title>
+  <meta name="description" content="Ganesh Coffee Chile ofrece café artesanal con inspiración espiritual y natural. Disfruta de nuestros productos únicos como Cold Brew, café en grano y más." />
+  <meta name="keywords" content="café artesanal, cold brew, café en grano, Ganesh Coffee, Chile, espiritualidad, café natural" />
   <meta name="author" content="Ganesh Coffee Chile" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Ganesh Coffee Chile" />
-  <meta property="og:description" content="Café artesanal inspirado en la espiritualidad y conexión. Conecta. Vibra. Disfruta cada sorbo." />
-  <meta property="og:image" content="https://img.pikbest.com/wp/202408/enhance-wooden-background-enhancing-the-beauty-of-coffee-beans_9913540.jpg!w700wp" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ganeshcoffeechile.cl" />
-  <title>Ganesh Coffee Chile | Café artesanal y espiritualidad</title>
+  <link rel="canonical" href="https://ganeshcoffeechile.cl" />
 
-  <!-- TAILWIND + FONTS -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-  <!-- DARK MODE CONFIG -->
   <script>
     tailwind.config = {
       darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ['Inter', 'sans-serif'],
-            playfair: ['Playfair Display', 'serif'],
-          }
-        }
-      }
-    };
+    }
   </script>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
   <style>
-    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    .btn-primary {
-      @apply bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full text-lg transition;
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
     }
   </style>
 </head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-
-  <!-- TOGGLE DARK MODE -->
+  <!-- Botón Modo Oscuro -->
   <div class="fixed top-4 right-4 z-50">
-    <button onclick="document.documentElement.classList.toggle('dark')" aria-label="Cambiar modo oscuro"
-      class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-full shadow hover:scale-110 transition">
-      🌙 / ☀️
+    <button id="toggleDark" class="bg-gray-800 text-white dark:bg-white dark:text-black px-4 py-2 rounded shadow hover:scale-105 transition transform duration-300">
+      Modo Oscuro
     </button>
   </div>
 
   <!-- HERO -->
-  <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://img.pikbest.com/wp/202408/enhance-wooden-background-enhancing-the-beauty-of-coffee-beans_9913540.jpg!w700wp');">
-    <div class="flex flex-col items-center justify-center h-full bg-black bg-opacity-60 text-white text-center px-6">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-down">Ganesh Coffee Chile</h1>
-      <p class="text-xl md:text-2xl mb-6 italic" data-aos="fade-up">Conecta. Vibra. Disfruta cada sorbo.</p>
-      <a href="https://wa.me/56912345678" target="_blank" class="btn-primary" data-aos="zoom-in" data-aos-delay="300">Haz tu pedido por WhatsApp</a>
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://img.pikbest.com/wp/202408/enhance-wooden-background-enhancing-the-beauty-of-coffee-beans_9913540.jpg!w700wp');">
+    <div class="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-6">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">Ganesh Coffee Chile</h1>
+      <p class="text-xl md:text-2xl mb-6 italic animate__animated animate__fadeInUp">Conecta. Vibra. Disfruta cada sorbo.</p>
+      <a href="https://wa.me/56912345678" target="_blank"
+         class="inline-flex items-center gap-2 px-6 py-3 text-white rounded-full text-lg font-semibold shadow-lg transition-colors duration-300"
+         style="background-color: #25D366;">
+        ☕ Haz tu pedido por WhatsApp
+      </a>
     </div>
-  </header>
-
-  <!-- SECCIÓN: QUIÉNES SOMOS -->
-  <section class="py-20 bg-white dark:bg-gray-900 text-center px-6" data-aos="fade-up">
-    <h2 class="text-4xl mb-6">¿Quiénes somos?</h2>
-    <p class="max-w-3xl mx-auto text-lg leading-relaxed">Ganesh Coffee es más que café. Es ritual, conexión y amor por los detalles. Inspirados por la espiritualidad y la naturaleza, llevamos un café artesanal que nutre el cuerpo y el alma.</p>
   </section>
 
-  <!-- SECCIÓN: PRODUCTOS -->
-  <section class="py-20 bg-gray-100 dark:bg-gray-800" data-aos="fade-up" data-aos-delay="100">
+  <!-- QUIÉNES SOMOS -->
+  <section class="py-16 bg-white dark:bg-gray-900 text-center px-6" data-aos="fade-up">
+    <h2 class="text-4xl mb-4">¿Quiénes somos?</h2>
+    <p class="max-w-3xl mx-auto text-lg">Ganesh Coffee es más que café. Es ritual, conexión y amor por los detalles. Inspirados por la espiritualidad y la naturaleza, llevamos un café artesanal que nutre el cuerpo y el alma.</p>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="py-16 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
     <h2 class="text-4xl text-center mb-12">Nuestros Cafés</h2>
-    <div class="grid md:grid-cols-3 gap-10 px-6 max-w-6xl mx-auto">
-      <!-- Producto 1 -->
-      <article class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition hover:scale-105" data-aos="zoom-in">
+    <div class="grid md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
         <img src="https://st.depositphotos.com/1000163/2334/i/450/depositphotos_23344356-stock-photo-coffee-beans-on-brown-wooden.jpg" alt="Cold Brew" class="w-full h-64 object-cover">
         <div class="p-6">
           <h3 class="text-2xl font-semibold mb-2">Cold Brew</h3>
           <p class="text-gray-600 dark:text-gray-300">Refrescante, natural y artesanal. Perfecto para días cálidos.</p>
         </div>
-      </article>
-
-      <!-- Producto 2 -->
-      <article class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+      </div>
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
         <img src="https://st2.depositphotos.com/1013372/5796/i/450/depositphotos_57962491-stock-photo-coffee-beans-macro-on-a.jpg" alt="Café en grano" class="w-full h-64 object-cover">
         <div class="p-6">
           <h3 class="text-2xl font-semibold mb-2">Café en Grano</h3>
           <p class="text-gray-600 dark:text-gray-300">Tueste medio, aroma intenso, energía para tus rituales diarios.</p>
         </div>
-      </article>
-
-      <!-- Producto 3 -->
-      <article class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+      </div>
+      <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
         <img src="https://i.pinimg.com/originals/95/b4/94/95b494998b497385ce121080615933ae.jpg" alt="Preparado con amor" class="w-full h-64 object-cover">
         <div class="p-6">
           <h3 class="text-2xl font-semibold mb-2">Preparados con amor</h3>
           <p class="text-gray-600 dark:text-gray-300">Desde el corazón hasta tu taza. Amor líquido en cada gota.</p>
         </div>
-      </article>
+      </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: INSTAGRAM -->
-  <section class="py-20 bg-white dark:bg-gray-900 text-center" data-aos="fade-up">
+  <!-- INSTAGRAM -->
+  <section class="py-16 bg-white dark:bg-gray-900 text-center" data-aos="fade-up">
     <h2 class="text-4xl mb-6">Síguenos en Instagram</h2>
     <p class="text-lg mb-4">@ganeshcoffeechile</p>
     <div class="max-w-xl mx-auto">
-      <iframe src="https://www.instagram.com/ganeshcoffeechile/embed" class="w-full h-96 border-0 rounded-md" allowtransparency="true" loading="lazy" title="Instagram Ganesh"></iframe>
+      <iframe src="https://www.instagram.com/ganeshcoffeechile/embed" class="w-full h-96 border-0" allowtransparency="true"></iframe>
     </div>
   </section>
 
-  <!-- SECCIÓN: CONTACTO -->
-  <section class="py-20 bg-gray-100 dark:bg-gray-800 text-center px-6" data-aos="fade-up">
+  <!-- CONTACTO -->
+  <section class="py-16 bg-gray-100 dark:bg-gray-800 text-center px-6" data-aos="fade-up">
     <h2 class="text-4xl mb-4">Contáctanos</h2>
     <p class="text-lg mb-6">¿Tienes dudas o quieres hacer un pedido especial?</p>
-    <a href="https://wa.me/56912345678" target="_blank" class="btn-primary">Habla con nosotros por WhatsApp</a>
+    <a href="https://wa.me/56912345678" target="_blank"
+       class="inline-flex items-center gap-2 px-6 py-3 text-white rounded-full text-lg font-semibold shadow-lg transition-colors duration-300"
+       style="background-color: #25D366;">
+      📞 Habla con nosotros por WhatsApp
+    </a>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-black dark:bg-gray-950 text-white py-8 text-center" data-aos="fade-in">
-    <p>&copy; 2025 Ganesh Coffee Chile. Con amor y café ☕.</p>
+  <footer class="bg-black text-white py-6 text-center" data-aos="fade-in">
+    <p>&copy; 2025 Ganesh Coffee Chile. Con amor y café.</p>
   </footer>
 
-  <!-- AOS & Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
 
+  <!-- Modo Oscuro JS -->
+  <script>
+    const btn = document.getElementById('toggleDark');
+    const html = document.documentElement;
+
+    btn.addEventListener('click', () => {
+      html.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
