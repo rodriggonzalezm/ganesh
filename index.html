@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es" class="h-full">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ganesh Coffee Chile | Café Artesanal con Alma</title>
-  <meta name="description" content="Ganesh Coffee Chile ofrece café artesanal con inspiración espiritual y natural. Disfruta de nuestros productos únicos como Cold Brew, café en grano y más." />
-  <meta name="keywords" content="café artesanal, cold brew, café en grano, Ganesh Coffee, Chile, espiritualidad, café natural" />
+  <meta name="description"
+    content="Ganesh Coffee Chile ofrece café artesanal con inspiración espiritual y natural. Disfruta de nuestros productos únicos como Cold Brew, café en grano y más." />
+  <meta name="keywords"
+    content="café artesanal, cold brew, café en grano, Ganesh Coffee, Chile, espiritualidad, café natural" />
   <meta name="author" content="Ganesh Coffee Chile" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ganeshcoffeechile.cl" />
@@ -19,31 +22,39 @@
   </script>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap"
+    rel="stylesheet" />
 
   <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://res.cloudinary.com/dqqbdnefo/image/upload/v1753310881/IMG_2469_eivanj.png"
+    type="image/png" />
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
       font-family: 'Playfair Display', serif;
     }
   </style>
 </head>
-<body class="flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+<body
+  class="flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
 
   <!-- Botón Modo Oscuro -->
   <div class="fixed top-4 right-4 z-50">
-    <button id="toggleDark" class="bg-gray-800 text-white dark:bg-white dark:text-black px-4 py-2 rounded shadow hover:scale-105 transition transform duration-300">
+    <button id="toggleDark"
+      class="bg-gray-800 text-white dark:bg-white dark:text-black px-4 py-2 rounded shadow hover:scale-105 transition transform duration-300">
       Modo Oscuro
     </button>
   </div>
@@ -52,10 +63,12 @@
   <main class="flex-grow">
 
     <!-- HERO -->
-    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://img.pikbest.com/wp/202408/enhance-wooden-background-enhancing-the-beauty-of-coffee-beans_9913540.jpg!w700wp');">
+    <section class="relative h-screen bg-cover bg-center"
+      style="background-image: url('https://img.pikbest.com/wp/202408/enhance-wooden-background-enhancing-the-beauty-of-coffee-beans_9913540.jpg!w700wp');">
       <div class="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-6">
         <h1 class="text-5xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">Ganesh Coffee Chile</h1>
-        <p class="text-xl md:text-2xl mb-6 italic animate__animated animate__fadeInUp">Conecta. Vibra. Disfruta cada sorbo.</p>
+        <p class="text-xl md:text-2xl mb-6 italic animate__animated animate__fadeInUp">Conecta. Vibra. Disfruta cada
+          sorbo.</p>
         <a href="https://wa.me/56912345678" target="_blank"
           class="inline-flex items-center gap-2 px-6 py-3 text-white rounded-full text-lg font-semibold shadow-lg transition-colors duration-300"
           style="background-color: #d47c09;">
@@ -67,34 +80,129 @@
     <!-- QUIÉNES SOMOS -->
     <section class="py-16 bg-white dark:bg-gray-900 text-center px-6" data-aos="fade-up">
       <h2 class="text-4xl mb-4">¿Quiénes somos?</h2>
-      <p class="max-w-3xl mx-auto text-lg">Ganesh Coffee es más que café. Es ritual, conexión y amor por los detalles. Inspirados por la espiritualidad y la naturaleza, llevamos un café artesanal que nutre el cuerpo y el alma.</p>
+      <p class="max-w-3xl mx-auto text-lg">Ganesh Coffee es más que café. Es ritual, conexión y amor por los detalles.
+        Inspirados por la espiritualidad y la naturaleza, llevamos un café artesanal que nutre el cuerpo y el alma.</p>
     </section>
 
     <!-- PRODUCTOS -->
     <section class="py-16 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
       <h2 class="text-4xl text-center mb-12">Nuestros Cafés</h2>
-      <div class="grid md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-        <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-          <img src="https://st.depositphotos.com/1000163/2334/i/450/depositphotos_23344356-stock-photo-coffee-beans-on-brown-wooden.jpg" alt="Cold Brew" class="w-full h-64 object-cover">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+
+        <!-- Producto 1 -->
+        <article
+          class="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-[1.03] overflow-hidden">
+          <img
+            src="https://res.cloudinary.com/dqqbdnefo/image/upload/v1753310880/88ee1f13-3dce-4385-93dd-5cf233e5e4ac_vvitzo.jpg"
+            alt="Café de El Salvador" class="w-full h-64 object-cover rounded-t-xl" loading="lazy" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-2">Cold Brew</h3>
-            <p class="text-gray-600 dark:text-gray-300">Refrescante, natural y artesanal. Perfecto para días cálidos.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Café de El Salvador</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed">Blend único cultivado en tierras
+              volcánicas, con notas dulces de chocolate cremoso y acidez cítrica que despiertan tus mañanas.</p>
           </div>
-        </div>
-        <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-          <img src="https://st2.depositphotos.com/1013372/5796/i/450/depositphotos_57962491-stock-photo-coffee-beans-macro-on-a.jpg" alt="Café en grano" class="w-full h-64 object-cover">
+        </article>
+
+        <!-- Producto 2 -->
+        <article
+          class="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-[1.03] overflow-hidden">
+          <img
+            src="https://res.cloudinary.com/dqqbdnefo/image/upload/v1753310880/d5131ba8-36d4-44f5-8e28-59d746d473d2_x919r3.jpg"
+            alt="Café en grano" class="w-full h-64 object-cover rounded-t-xl" loading="lazy" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-2">Café en Grano</h3>
-            <p class="text-gray-600 dark:text-gray-300">Tueste medio, aroma intenso, energía para tus rituales diarios.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Café en Grano</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed">Tueste medio, aroma intenso, energía para
+              tus rituales diarios.</p>
           </div>
-        </div>
-        <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-          <img src="https://i.pinimg.com/originals/95/b4/94/95b494998b497385ce121080615933ae.jpg" alt="Preparado con amor" class="w-full h-64 object-cover">
+        </article>
+
+        <!-- Producto 3 -->
+        <article
+          class="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-[1.03] overflow-hidden">
+          <img src="https://res.cloudinary.com/dqqbdnefo/image/upload/v1753310881/IMG_5662_pvd7td.jpg"
+            alt="Preparado con amor" class="w-full h-64 object-cover rounded-t-xl" loading="lazy" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-2">Preparados con amor</h3>
-            <p class="text-gray-600 dark:text-gray-300">Desde el corazón hasta tu taza. Amor líquido en cada gota.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Preparados con amor</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed">Desde el corazón hasta tu taza. Amor
+              líquido en cada gota.</p>
           </div>
-        </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ORÍGENES -->
+    <section class="py-20 bg-white dark:bg-gray-900 text-center px-6" data-aos="fade-up">
+      <h2 class="text-4xl mb-12">Orígenes con Alma</h2>
+      <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto text-left">
+
+        <!-- El Salvador -->
+        <article class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">☕ El Salvador</h3>
+          <p class="mb-2">Perfil único por sus suelos volcánicos. Blend artesanal con 85 puntos CSA.</p>
+          <ul class="text-sm text-gray-700 dark:text-gray-300 list-disc list-inside">
+            <li>Altitud: 1.600 msnm</li>
+            <li>Variedad: Arábica</li>
+            <li>Notas: Chocolate cremoso, caramelo, acidez de mandarina</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Proveniente de pequeñas fincas volcánicas, este
+            café refleja la dedicación de las comunidades locales y un perfil dulce y equilibrado, ideal para
+            quienes buscan calidad y tradición en cada taza.</p>
+        </article>
+
+        <!-- Colombia -->
+        <article class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">🇨🇴 Colombia Excelso</h3>
+          <p class="mb-2">Desde el sur del Cauca, aroma tradicional certificado por la Federación de Cafeteros. 84
+            puntos CSA.</p>
+          <ul class="text-sm text-gray-700 dark:text-gray-300 list-disc list-inside">
+            <li>Altitud: 1.900 msnm</li>
+            <li>Variedad: Arábica - Caturra, Colombia</li>
+            <li>Notas: Lima, mandarina, panela, chocolate</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Cultivado en montañas neblinosas y ríos cristalinos,
+            cada grano refleja la identidad cultural y el sabor vibrante que caracteriza al café colombiano.</p>
+        </article>
+
+        <!-- Café Orgánico Femenino -->
+        <article class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">🌿 Café Orgánico Femenino</h3>
+          <p class="mb-2">Café sostenible liderado por mujeres del Cauca. 84 puntos CSA.</p>
+          <ul class="text-sm text-gray-700 dark:text-gray-300 list-disc list-inside">
+            <li>Altitud: 2.100 msnm</li>
+            <li>Variedad: Arábica - Caturra, Gran Colombia</li>
+            <li>Notas: Limón, mandarina, panela, caramelo</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Este café orgánico apoya el empoderamiento femenino,
+            prácticas agrícolas sustentables y mejora la calidad de vida de las mujeres caficultoras.</p>
+        </article>
+
+        <!-- Etiopía -->
+        <article class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">🌍 Etiopía Sidamo</h3>
+          <p class="mb-2">El origen del café. Carácter fuerte y vibrante. 86 puntos PSA.</p>
+          <ul class="text-sm text-gray-700 dark:text-gray-300 list-disc list-inside">
+            <li>Altitud: 1.900 msnm</li>
+            <li>Variedad: Arábica Heirloom Wild</li>
+            <li>Notas: Nuez, caramelo achocolatado, naranja</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Proveniente del valle Sidamo en Etiopía, este café
+            posee un carácter único y una rica historia que lo convierte en favorito en Europa y Arabia.</p>
+        </article>
+
+        <!-- Alto Amazonas -->
+        <article class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow-lg md:col-span-2">
+          <h3 class="text-2xl font-semibold mb-2">🌿 Alto Amazonas</h3>
+          <p class="mb-2">Desde Perú, Colombia y Brasil. Ensamblaje amazónico con identidad y sabor.</p>
+          <ul class="text-sm text-gray-700 dark:text-gray-300 list-disc list-inside">
+            <li>Altitud: 1.800 msnm</li>
+            <li>Variedad: Arábica</li>
+            <li>Notas: Vainilla, limón, caramelo, toffee</li>
+            <li>Acidez media, dulzor medio, intensidad media</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Un café especial de la selva amazónica que combina lo
+            mejor de Perú, Colombia y Brasil, con un sabor que refleja la biodiversidad y riqueza de la región.</p>
+        </article>
+
       </div>
     </section>
 
@@ -103,7 +211,8 @@
       <h2 class="text-4xl mb-6">Síguenos en Instagram</h2>
       <p class="text-lg mb-4">@ganeshcoffeechile</p>
       <div class="max-w-xl mx-auto">
-        <iframe src="https://www.instagram.com/ganeshcoffeechile/embed" class="w-full h-96 border-0" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/ganeshcoffeechile/embed" class="w-full h-96 border-0"
+          allowtransparency="true"></iframe>
       </div>
     </section>
 
@@ -126,7 +235,9 @@
 
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000 });</script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 
   <!-- Modo Oscuro -->
   <script>
@@ -135,4 +246,5 @@
     btn.addEventListener('click', () => html.classList.toggle('dark'));
   </script>
 </body>
+
 </html>
